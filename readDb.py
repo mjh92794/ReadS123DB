@@ -99,7 +99,7 @@ def readS123db(inDB=IN_DB):
     #2 - Sent
     #3 - Submission Error
     #4 - Inbox
-    for row in cur.execute('SELECT name, data, status from Surveys where status = 1 or status = 3'):
+    for row in cur.execute('SELECT name, data, status from Surveys where status = 2 or status = 4'):
         ##print(row)
         print ('-----------------')
         surveyName = row[0]
